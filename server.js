@@ -4,8 +4,7 @@ const ejs = require('ejs')
 const morgan = require('morgan')
 const db = require('monk')('localhost/mydb')
 
-// mongodb://haruka:kodoma7@ds255715.mlab.com:55715/mymovies
-// haruka - kodoma7
+
 
 
 app.set('view engine', 'ejs')
@@ -42,3 +41,11 @@ app.listen(5000, function(err){
     if(err){throw err;}
     console.log('server running on 5000');
 })
+
+
+
+// ------------Data -------------
+// mongodb://haruka:kodoma7@ds255715.mlab.com:55715/mymovies
+// haruka - kodoma7
+// Documentation: https://www.npmjs.com/package/monk
+// Youtube: https://www.youtube.com/watch?v=JnyBjeMmJyY
